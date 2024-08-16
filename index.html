@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue cdn test</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+  <div id="app">{{ message }}
+      <h1>{{ name }}</h1>
+      <button @click="clickMe">click me</button>
+  </div>
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          message: "hello vue",
+          name: "victor",
+        };
+      },
+      methods: {
+        clickMe() {
+          console.log("am clicked");
+          this.name = "aka tosvic"
+        },
+      },
+    });
+    
+    app.mount("#app");
+  </script>
+  
+</body>
+</html>
