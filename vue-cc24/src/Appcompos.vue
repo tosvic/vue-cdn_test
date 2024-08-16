@@ -1,26 +1,23 @@
-<!-- <script>
-export default {
-  data() {
-    return {
-      name: "vite vic",
-      status: "pendin",
-      task: ['task 1', 'task 2', 'task 3', 'task 4'],
-      link: 'https://google.com'
-    };
-  },
-  methods: {
-    toggleStatus() {
-      if (this.status === 'active') {
-        this.status = 'pending';
-      } else if (this.status === 'pending') {
-        this.status = 'inactive';
+<!-- Compostion API -->
+<script setup>
+import { ref } from "vue";
+
+const name = ref("vite vic");
+const status = ref("pendin");
+const task = ref(['task 1', 'task 2', 'task 3', 'task 4']);
+const link = 'https://google.com';
+
+const toggleStatus = () => {
+    if (status.value === 'active') {
+        status.value = 'pending';
+      } else if (status.value === 'pending') {
+        status.value = 'inactive';
       } else {
-        this.status = 'active'
-      }
-    }
-  }
-};
-</script> -->
+        status.value = 'active'
+    }    
+}
+
+</script>
 <template>
   <!-- Conditonal Directives -->
   <h1>{{ name }}</h1>
