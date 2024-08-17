@@ -1,3 +1,9 @@
+<script setup>
+import Navbar from "./Navbar.vue";
+import Hero from "./Hero.vue";
+</script>
+
 <template>
-  <h1>hello</h1>
+  <Navbar />
+  <Hero />
 </template>
