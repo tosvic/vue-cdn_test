@@ -1,8 +1,8 @@
 <script setup>
-import Hero from "@/Hero.vue";
-import HomeCard from "@/HomeCard.vue";
-import JobList from "@/JobList.vue";
-import Joblistings from "@/Joblistings.vue";
+import Hero from "@/components/Hero.vue";
+import HomeCard from "@/components/HomeCard.vue";
+import JobList from "@/components/JobList.vue";
+import Joblistings from "@/components/Joblistings.vue";
 </script>
 
 <template>

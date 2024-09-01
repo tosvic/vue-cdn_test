@@ -3,14 +3,14 @@ import { defineProps } from 'vue';
 
 defineProps({
   bg: {
-    type: string,
-    default: 'bg-gray-100'
-  }
+    type: String,
+    default: 'bg-gray-100',
+  },
 });
 </script>
 
 <template>
-  <div class="${bg} p-6 rounded-lg shadow-md">
-<slot></slot>
+  <div :class="`${bg} p-6 rounded-lg shadow-md`">
+    <slot></slot>
   </div>
 </template>
