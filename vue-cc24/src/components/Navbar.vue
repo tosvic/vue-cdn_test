@@ -11,7 +11,7 @@ import logo from '@/assets/img/logo.png'
             class="flex flex-1 items-center justify-center md:items-stretch md:justify-start"
           >
             <!-- Logo -->
-            <a class="flex flex-shrink-0 items-center mr-4" href="index.html">
+            <a class="flex flex-shrink-0 items-center mr-4" href="/">
               <img class="h-10 w-auto" :src="logo" alt="Vue Jobs" />
               <span class="hidden md:block text-white text-2xl font-bold ml-2"
                 >Vue Jobs</span
