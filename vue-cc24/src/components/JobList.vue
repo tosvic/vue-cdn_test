@@ -50,12 +50,12 @@ const truncatedDescription = computed(() => {
                   <i class="pi pi-map-marker text-yellow-500"></i>
                   {{job.location}}
                 </div>
-                <a
-                  :href="'/job/' + job.id"
+                <RouterLink
+                  :to="'/job/' + job.id"
                   class="h-[36px] bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg text-center text-sm"
                 >
                   Read More
-                </a>
+                </RouterLink>
               </div>
             </div>
           </div>

@@ -8,6 +8,5 @@ import Joblistings from "@/components/Joblistings.vue";
 <template>
   <Hero title="hello peole" subtitle="chilling with props"/>
   <HomeCard />
-  <!-- <JobList /> -->
   <Joblistings :limit="3" :showButton="true" />
 </template>
